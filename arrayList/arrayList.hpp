@@ -13,7 +13,7 @@ class ArrayList {
     void add(int value);
     bool remove(int value);
     bool removeAt(const int index);
-// didn't the question say to use protected instead of private? are we going to do the same here?
+
   private:
     int* _array;
     size_t _size;

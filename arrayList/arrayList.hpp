@@ -1,5 +1,7 @@
+#ifndef arraylist_hpp  // Include guard starts here
+#define arraylist_hpp
+
 #include <iostream>
-#include <stdio.h>
 
 class ArrayList {
   public:
@@ -11,13 +13,15 @@ class ArrayList {
     size_t capacity();
     int& operator[](int i);
     void add(int value);
+    int get(const int index);
     bool remove(int value);
     bool removeAt(const int index);
 // didn't the question say to use protected instead of private? are we going to do the same here?
-  private:
+  protected:
     int* _array;
     size_t _size;
     size_t _capacity;
 };
 
-#endif /*arraylist_hpp*/
+// what does endif do??
+#endif /* arraylist_hpp */
